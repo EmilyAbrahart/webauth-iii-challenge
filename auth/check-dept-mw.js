@@ -1,6 +1,6 @@
-module.exports = dept => {
+module.exports = department => {
 	return function(req, res, next) {
-		if (req.decodedToken.roles && req.decodedToken.dept.includes(dept)) {
+		if (req.decodedToken.roles && req.decodedToken.department.includes(department)) {
 			next();
 		} else {
 			res
