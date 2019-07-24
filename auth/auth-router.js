@@ -53,7 +53,7 @@ function generateToken(user) {
 	const payload = {
 		sub: user.id,
 		username: user.username,
-		dept: ['Web Development']
+		dept: user.dept
 	};
 
 	const options = {
@@ -62,3 +62,5 @@ function generateToken(user) {
 
 	return jwt.sign(payload, secret.jwtSecret, options);
 }
+
+module.exports = router;
