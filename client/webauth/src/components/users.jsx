@@ -1,6 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import User from './user';
+import axiosWithAuth from '../authentication/axiosWithAuth'
 
 class Users extends React.Component {
   constructor(props) {
@@ -11,7 +12,7 @@ class Users extends React.Component {
   }
 
   getUsers = () => {
-    axios
+    axiosWithAuth()
     .get('http://localhost:5000/api/users')
     .then(res => {
       this.setState({
