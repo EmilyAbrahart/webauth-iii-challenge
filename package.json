@@ -4,7 +4,7 @@
   "description": "- Authentication.\r - Express Middleware.\r - JSON Web Tokens (JWTs).\r - Hashing Passwords.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "server": "nodemon index.js"
   },
   "repository": {
     "type": "git",
@@ -27,7 +27,5 @@
     "nodemon": "^1.19.1",
     "sqlite3": "^4.0.9"
   },
-  "devDependencies": {
-    "eslint": "^6.1.0"
-  }
+  "devDependencies": {}
 }
